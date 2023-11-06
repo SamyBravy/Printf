@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sdell-er <sdell-er@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:12:17 by marvin            #+#    #+#             */
-/*   Updated: 2023/11/06 13:12:17 by marvin           ###   ########.fr       */
+/*   Updated: 2023/11/06 15:01:15 by sdell-er         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_putnbr(long n)
 {
-    int dim;
+	int	dim;
 
-    dim = 0;
+	dim = 0;
 	if (n < 0)
 	{
 		dim += ft_putchar('-');
@@ -25,5 +25,5 @@ int	ft_putnbr(long n)
 	if (n > 9)
 		dim += ft_putnbr(n / 10);
 	dim += ft_putchar(n % 10 + '0');
-    return (dim);
+	return (dim);
 }
